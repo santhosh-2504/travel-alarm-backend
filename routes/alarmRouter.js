@@ -13,12 +13,12 @@ const router = express.Router();
 router.post('/create', createAlarm);
 
 // Get alarm by security code
-router.get('/alarms/:code', getAlarmByCode);
+router.get('/:code', getAlarmByCode);
 
 // Update alarm status
-router.patch('/alarms/:code', updateAlarmStatus);
+router.patch('/:code', updateAlarmStatus);
 
 // Delete alarm
-router.delete('/alarms/:code', deleteAlarm);
+router.delete('/:code', deleteAlarm);
 
 export default router;
