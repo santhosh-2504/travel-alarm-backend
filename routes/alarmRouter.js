@@ -10,7 +10,7 @@ import {
 const router = express.Router();
 
 // Create a new alarm
-router.post('/alarms', createAlarm);
+router.post('/create', createAlarm);
 
 // Get alarm by security code
 router.get('/alarms/:code', getAlarmByCode);

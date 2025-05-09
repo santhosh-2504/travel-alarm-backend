@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
-app.use('/api', alarmRoutes);
+app.use('/api/alarms', alarmRoutes);
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
     dbName: 'TravelAlarm'
